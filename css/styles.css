@@ -35,7 +35,50 @@ body, html {
 .sidebar {
     grid-area: 1 / 1 / -1 / 2;
 
-    background-color: #55BBFF;
+    display: grid;
+    grid-template-rows: 100px 280px 140px;
+    gap: 24px;
+
+    padding: 0px 40px;
+
+    background-color: #5599DD;
+
+    color: white;
+}
+
+.sidebar > h1 {
+    display: grid;
+    /* grid-template-rows: 1fr;
+    grid-template-columns: 1fr; */
+    align-items: center;
+    
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.sidebar > ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-auto-rows: 80px; */
+
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+
+}
+
+.sidebar > ul > li {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+li {
+    margin: 0;
+    padding: 0;
 }
 
 /* Main Content ***************************************************************/
