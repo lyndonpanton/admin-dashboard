@@ -1,3 +1,4 @@
+/* General ********************************************************************/
 * {
     box-sizing: border-box;
 
@@ -12,3 +13,37 @@ body, html {
     margin: 0;
     padding: 0;
 }
+
+/* Dashboard ******************************************************************/
+.dashboard {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 2fr 8fr;
+
+    margin: 0 auto;
+    height: 100vh;
+}
+
+/* Header ******************************************************************/
+.header {
+    grid-area: 1 / 2 / 2 / -1;
+
+    background-color: red;
+}
+
+/* Sidebar ******************************************************************/
+.sidebar {
+    grid-area: 1 / 1 / -1 / 2;
+
+    background-color: #55BBFF;
+}
+
+/* Main Content ***************************************************************/
+.main-content {
+    grid-area: 2 / 2 / -1 / -1;
+    background-color: yellow;
+}
+
+/* Projects */
+
+/* Announcements */
