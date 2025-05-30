@@ -58,6 +58,13 @@ h1, h2, h3, h4, h5, h6 {
     color: #666666;
 }
 
+.card-effect {
+    z-index: 1;
+    box-shadow:
+        2px 3px 4px #AAAABB,
+        4px 6px 4px #CCCCDD;
+}
+
 /* Dashboard ******************************************************************/
 .dashboard {
     display: grid;
@@ -227,7 +234,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Main Content ***************************************************************/
-
 .main {
     grid-area: 2 / 2 / -1 / -1;
 
