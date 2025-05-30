@@ -24,8 +24,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .icon {
+    display: block;
+    margin: 0 auto;
     width: 30px;
     height: auto;
+
+    transition: all 0.25s linear;
+}
+
+.header .icon:hover {
+    width: 40px;
+    transition: all 0.25s linear;
 }
 
 .icon-white {
@@ -109,8 +118,15 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 50px;
     width: 80%;
     height: 35px;
+    padding-left: 16px;
 
     background-color: #DDDDEA;
+}
+
+#header-search-field:hover {
+    border: 3px solid black;
+
+    /* background-color: white; */
 }
 
 .header-alarm-icon {
@@ -121,8 +137,24 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.header .profile-image {
+    border: 2px solid transparent;
+}
+
+.header .profile-image:hover {
+    border-color: #5599DD;
+
+    cursor: pointer;
+}
+
 .header-profile-name {
     text-align: left;
+}
+
+.header-profile-name:hover, .header-greeting-name:hover {
+    text-decoration: underline;
+
+    cursor: pointer;
 }
 
 .header-row-bottom {
@@ -161,8 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-button {
-    display: block;
-    
+    border-width: 6px;
     border-color: transparent;
     border-radius: 50px;
     padding: 8px 16px;
@@ -171,6 +202,16 @@ h1, h2, h3, h4, h5, h6 {
 
     color: white;
     text-align: center;
+}
+
+.header-button:focus, .header-button:hover {
+    outline: none;
+
+    border: 6px solid darkblue;
+}
+
+.header-button:active {
+    background-color: #246092;
 }
 
 
@@ -233,6 +274,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.5rem;
 }
 
+.sidebar-list-item:hover > .sidebar-list-text {
+    text-decoration: underline;
+
+    cursor: pointer;
+}
+
 /* Main Content ***************************************************************/
 .main {
     grid-area: 2 / 2 / -1 / -1;
@@ -273,6 +320,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 32px 16px;
 
     background-color: white;
+
+    transition: scale 0.25s linear;
+}
+
+.main-projects-card:hover {
+    scale: 1.05;
 }
 
 .main-projects-card-heading {
@@ -296,7 +349,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-projects-card-icon {
+    transition: scale 0.25s linear;
+}
 
+.main-projects-card-icon:hover {
+    scale: 1.4;
 }
 
 /* Extra */
@@ -352,6 +409,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+.main-extra-list-item:hover > .main-extra-list-heading {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .main-extra-announcement-list-description {
     margin: 0;
     padding: 0;
@@ -388,13 +450,21 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px 0;
 }
 
-.main-trending-list-text {
-    padding-bottom: 8px;
-}
-
 .main-trending-list-handle {
     margin: 0;
     padding: 0;
+}
+
+.main-trending-list-item:hover {
+    cursor: pointer;
+}
+
+.main-trending-list-item:hover .main-trending-list-handle {
+    text-decoration: underline;
+}
+
+.main-trending-list-text {
+    padding-bottom: 8px;
 }
 
 .main-trending-list-status {
