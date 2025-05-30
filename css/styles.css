@@ -14,6 +14,10 @@ body, html {
     padding: 0;
 }
 
+input, button, select {
+    appearance: none;
+}
+
 /* Dashboard ******************************************************************/
 .dashboard {
     display: grid;
@@ -27,7 +31,53 @@ body, html {
 /* Header ******************************************************************/
 .header {
     grid-area: 1 / 2 / 2 / -1;
+}
 
+.header-row-top {
+    display: grid;
+    grid-template-columns: 120px 700px 80px 80px 1fr;
+    align-items: center;
+    gap: 20px;
+
+    height: 50%;
+    padding: 20px 20px 20px 10px;
+
+    text-align: center;
+}
+
+.header-search-icon {
+    text-align: right;
+}
+
+.header-search-bar {
+
+}
+
+#header-search-field {
+    display: block;
+    
+    margin-left: 0;
+    border-color: transparent;
+    border-radius: 50px;
+    width: 90%;
+    height: 35px;
+
+    background-color: #DDDDEA;
+}
+
+.header-alarm-icon {
+
+}
+
+.header-profile-icon {
+
+}
+
+.header-profile-name {
+    text-align: left;
+}
+
+.header-row-bottom {
     background-color: red;
 }
 
