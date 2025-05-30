@@ -36,6 +36,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 50px;
 }
 
+.icon-small {
+    width: 25px;
+    height: auto;
+}
+
 /* Dashboard ******************************************************************/
 .dashboard {
     display: grid;
