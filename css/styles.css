@@ -31,22 +31,23 @@ input, button, select {
 /* Header ******************************************************************/
 .header {
     grid-area: 1 / 2 / 2 / -1;
+
+    padding: 0 60px;
 }
 
 .header-row-top {
     display: grid;
-    grid-template-columns: 120px 700px 80px 80px 1fr;
+    grid-template-columns: 60px 800px 80px 80px 1fr;
     align-items: center;
     gap: 20px;
 
     height: 50%;
-    padding: 20px 20px 20px 10px;
 
     text-align: center;
 }
 
 .header-search-icon {
-    text-align: right;
+    text-align: left;
 }
 
 .header-search-bar {
@@ -59,7 +60,7 @@ input, button, select {
     margin-left: 0;
     border-color: transparent;
     border-radius: 50px;
-    width: 90%;
+    width: 80%;
     height: 35px;
 
     background-color: #DDDDEA;
@@ -78,8 +79,51 @@ input, button, select {
 }
 
 .header-row-bottom {
-    background-color: red;
+    display: grid;
+    grid-template-columns: 80px 600px 1fr;
+    align-items: center;
+    column-gap: 16px;
+
+    height: 50%;
 }
+
+.header-icon-profile-large {
+    display: block;
+}
+
+.header-greeting {
+    padding: 0;
+}
+
+.header-greeting-message {
+
+}
+
+.header-greeting-name {
+
+}
+
+.header-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+
+    padding: 0 20px 0 60px;
+
+    color: white;
+}
+
+.header-button {
+    display: block;
+    
+    border-radius: 50px;
+    padding: 15px 20px;
+
+    background-color: #5599DD;
+
+    text-align: center;
+}
+
 
 /* Sidebar ******************************************************************/
 .sidebar {
