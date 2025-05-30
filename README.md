@@ -29,5 +29,9 @@ and teams members that use the same application.
 ## Credits
 
 - [Lyndon Mykal Panton (Developer)](https://github.com/lyndonpanton)
+- [Bunny profile image | Alexandra_Koch](https://pixabay.com/illustrations/cartoon-easter-bunny-cartoon-bunny-7011655/)
+- [Cloud cat profile image | Bellinon](https://pixabay.com/vectors/cat-cloud-heart-kitten-cute-crown-3182830/)
+- [Lemon profile image | drabbitod](https://pixabay.com/vectors/lemon-citrus-citric-fruit-yellow-7074240/)
+- [Snowfall cat profile image | JenDigitalArt](https://pixabay.com/illustrations/cat-winter-cartoon-snowfall-snow-3643705/)
 
 ## References

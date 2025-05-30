@@ -41,6 +41,19 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
 }
 
+.profile-image {
+    border-radius: 50%;
+    
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+}
+
+.profile-image-large {
+    width: 60px;
+    height: 60px;
+}
+
 /* Dashboard ******************************************************************/
 .dashboard {
     display: grid;
@@ -55,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 .header {
     grid-area: 1 / 2 / 2 / -1;
 
-    padding: 0 60px;
+    padding: 0 60px 10px;
 }
 
 .header-row-top {
@@ -360,20 +373,10 @@ h1, h2, h3, h4, h5, h6 {
 .main-trending-list-item {
     display: grid;
     grid-template-columns: 60px 1fr;
-    align-items: end;
+    align-items: center;
     gap: 16px;
 
     margin: 10px 0;
-}
-
-.main-trending-list-icon {
-    border-radius: 50%;
-    
-    margin: 0 auto;
-    width: 50px;
-    height: 50px;
-
-    background-color: blue;
 }
 
 .main-trending-list-text {
@@ -385,7 +388,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
-.main-trending-list-username {
+.main-trending-list-status {
     margin: 0;
     padding: 0;
 }
