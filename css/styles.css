@@ -18,6 +18,11 @@ input, button, select {
     appearance: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
 /* Dashboard ******************************************************************/
 .dashboard {
     display: grid;
@@ -176,9 +181,67 @@ li {
 }
 
 /* Main Content ***************************************************************/
-.main-content {
+.main {
     grid-area: 2 / 2 / -1 / -1;
-    background-color: yellow;
+
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+
+    padding: 24px 24px;
+
+    background-color: #DDDDEA;
+}
+
+.main-projects {
+
+}
+
+.main-projects-heading {
+}
+
+.main-projects-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+    gap: 32px;
+
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.main-projects-card {
+    position: relative;
+
+    border-left: 6px solid orange;
+    border-radius: 4px;
+    padding: 32px 16px;
+
+    background-color: white;
+}
+
+.main-projects-card-heading {
+    margin: 0 0 6px 0;
+}
+
+.main-projects-card-description {
+    margin: 0;
+}
+
+.main-projects-card-icons {
+    position: absolute;
+    right: 16px;
+    bottom: 32px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    gap: 20px
+
+
+    width: 40%;
+}
+
+.main-projects-card-icon {
+
 }
 
 /* Projects */
